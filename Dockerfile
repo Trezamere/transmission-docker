@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER trezamere
 
-EXPOSE 9091 51413
+EXPOSE 9091 51413 51413/udp
 
 RUN adduser -HDu 39672 -s /sbin/nologin -h /var/lib/transmission -g transmission transmission
 
